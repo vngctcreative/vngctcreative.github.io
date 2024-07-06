@@ -240,6 +240,15 @@ body.dark {
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
-    color: #4caf50;
-}
+/* Add specific colors for each social icon */
+.social-icons a.facebook { color: #3b5998; }
+.social-icons a.spotify { color: #1db954; }
+.social-icons a.youtube { color: #ff0000; }
+.social-icons a.instagram { color: #e1306c; }
+.social-icons a.steam { color: #00adee; }
+
+.social-icons a.facebook:hover { color: #2d4373; }
+.social-icons a.spotify:hover { color: #1ed760; }
+.social-icons a.youtube:hover { color: #cc0000; }
+.social-icons a.instagram:hover { color: #c13584; }
+.social-icons a.steam:hover { color: #0099cc; }
