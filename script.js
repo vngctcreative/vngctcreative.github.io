@@ -75,7 +75,7 @@ function loadTheme() {
 
 async function main() {
     loadTheme();
-    const username = 'VngGodCreative';
+    const username = 'vngctcreative';
     const profile = await fetchGitHubProfile(username);
     displayProfile(profile);
     const repos = await fetchGitHubRepos(username);
