@@ -63,6 +63,16 @@ body.dark {
     margin: 10px 0;
 }
 
+.profile-card a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.profile-card a:hover {
+    color: var(--link-hover-color);
+}
+
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -90,6 +100,16 @@ body.dark {
     transform: translateY(-5px);
 }
 
+.repo a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.repo a:hover {
+    color: var(--link-hover-color);
+}
+
 .websites-container {
     background: var(--card-background);
     color: var(--card-text);
@@ -97,7 +117,8 @@ body.dark {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
-    width: 300px;
+    width: auto;
+    height: 250px; /* Đảm bảo chiều cao tự động điều chỉnh */
     flex-shrink: 0;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -118,13 +139,13 @@ body.dark {
 }
 
 .websites-container a {
+    color: var(--link-color);
     text-decoration: none;
-    color: inherit;
     transition: color 0.3s;
 }
 
 .websites-container a:hover {
-    color: #4caf50;
+    color: var(--link-hover-color);
 }
 
 .toggle-container {
@@ -187,11 +208,15 @@ body.dark {
 :root {
     --card-background: #fff;
     --card-text: #000;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
 }
 
 body.dark {
     --card-background: #333;
     --card-text: #fff;
+    --link-color: #4caf50;
+    --link-hover-color: #388e3c;
 }
 
 .footer {
