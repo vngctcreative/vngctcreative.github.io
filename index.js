@@ -106,20 +106,20 @@ function displayProfile(profile) {
         <p><strong>Followers:</strong> ${profile.followers} | <strong>Following:</strong> ${profile.following}</p>
         <div class="social-icons">
             <a href="${profile.html_url}" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://facebook.com/nhd31082003" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/creative1896" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.gg/4Sbc2hVvNT" target="_blank"><i class="fab fa-discord"></i></a>
-            <a href="https://youtube.com/@creative1896" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://open.spotify.com/user/317htlrmz66bjeqe4cktshzz7u3q?si=7f0624d9511c461c" target="_blank"><i class="fab fa-spotify"></i></a>
-            <a href="https://steamcommunity.com/id/creative3108" target="_blank"><i class="fab fa-steam"></i></a>
-            <a href="https://store.epicgames.com/u/59db6de1245e4c3890b5f3458618d6d9" target="_blank"><i class="fab fa-epic-games"></i></a>
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/yourprofile" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://spotify.com/yourprofile" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://steamcommunity.com/id/yourprofile" target="_blank"><i class="fab fa-steam"></i></a>
+            <a href="https://epicgames.com/id/yourprofile" target="_blank"><i class="fab fa-epic-games"></i></a>
         </div>
     `;
 }
 
 function displayRepos(repos) {
     const reposDiv = document.querySelector('.repos-container');
-    reposDiv.innerHTML = '<h1>Github Repositories</h1>';
+    reposDiv.innerHTML = '<h1>Github Repositories</h1><input type="text" id="search-bar" placeholder="Tìm kiếm kho lưu trữ..." onkeyup="searchRepos()">';
     if (!repos || repos.length === 0) {
         const noReposMessage = document.createElement('p');
         noReposMessage.className = 'no-repos';
@@ -136,6 +136,19 @@ function displayRepos(repos) {
             <p><strong>Stars:</strong> ${repo.stargazers_count} | <strong>Forks:</strong> ${repo.forks_count}</p>
         `;
         reposDiv.appendChild(repoDiv);
+    });
+}
+
+function searchRepos() {
+    const input = document.getElementById('search-bar').value.toLowerCase();
+    const repos = document.querySelectorAll('.repo');
+    repos.forEach(repo => {
+        const repoName = repo.querySelector('h3').innerText.toLowerCase();
+        if (repoName.includes(input)) {
+            repo.style.display = '';
+        } else {
+            repo.style.display = 'none';
+        }
     });
 }
 

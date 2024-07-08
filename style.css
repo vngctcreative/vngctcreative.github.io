@@ -55,9 +55,9 @@ canvas {
 .links-list ul li {
     list-style: none;
     margin-right: 2rem;
-    font-size: 1.4rem; /* Reduced font size */
+    font-size: 1.4rem;
     margin-bottom: 0;
-    color: #ccc; /* Adjusted text color */
+    color: #ccc;
 }
 
 .links-list h1 {
@@ -90,26 +90,26 @@ canvas {
 
 /* Additional styles for elements created by index.js */
 .repos-container {
-    color: #ccc; /* Default text color for repo container */
+    color: #ccc;
 }
 
 .repo {
-    background: rgba(51, 51, 51, 0.5); /* 50% opacity */
-    padding: 0.5rem 1rem; /* Reduced padding */
+    background: rgba(51, 51, 51, 0.5);
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    margin-bottom: 0.5rem; /* Reduced margin */
-    color: #ccc; /* Adjusted text color */
+    margin-bottom: 0.5rem;
+    color: #ccc;
 }
 
 .repo h3 a {
     color: #e91e63;
-    font-size: 1.4rem; /* Reduced font size */
+    font-size: 1.4rem;
 }
 
 .repo p {
     color: #ccc;
-    font-size: 1rem; /* Reduced font size */
-    margin: 0.5rem 0; /* Reduced margin */
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
 .repo p strong {
@@ -119,7 +119,7 @@ canvas {
 .links-list h1 {
     color: #fff;
     font-size: 2rem;
-    margin-bottom: 1rem; /* Add margin below the heading */
+    margin-bottom: 1rem;
 }
 
 .no-repos {
@@ -129,7 +129,7 @@ canvas {
 
 /* Styles for the profile section */
 #profile-box {
-    background: rgba(51, 51, 51, 0.5); /* 50% opacity */
+    background: rgba(51, 51, 51, 0.5);
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
@@ -158,7 +158,7 @@ canvas {
 .web-links-container {
     padding: 1rem;
     border-radius: 5px;
-    background: rgba(51, 51, 51, 0.5); /* 50% opacity */
+    background: rgba(51, 51, 51, 0.5);
     color: #ccc;
 }
 
@@ -175,4 +175,16 @@ canvas {
 
 .social-icons a:hover {
     color: #e91e63;
+}
+
+/* Styles for the search bar */
+#search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(51, 51, 51, 0.5);
+    color: #fff;
 }
