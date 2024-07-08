@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Profile</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My GitHub Profile</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="toggle-container">
-            <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
-            <label for="theme-toggle" class="toggle-label">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <span class="toggle-ball"></span>
-            </label>
-        </div>
-        <div id="profile" class="profile-card"></div>
-        <div class="main-content">
-            <div class="repos-container"></div>
-            <div id="websites" class="websites-container">
-                <h3>My Websites</h3>
-                <ul>
-                    <li><a href="https://vngct.w3spaces.com/" target="_blank">vngct.w3spaces.com</a></li>
-                    <li><a href="https://vngct.vercel.app/" target="_blank">vngct.vercel.app</a></li>
-                    <li><a href="https://shopvngct.000webhostapp.com/" target="_blank">shopvngct.000webhostapp.com</a></li>
-                    <li><a href="https://vngct.netlify.app/" target="_blank">vngct.netlify.app</a></li>
-                    <li><a href="http://shopaccvngct.rf.gd/" target="_blank">shopaccvngct.rf.gd</a></li>
-                    <li><a href="https://vngct.rf.gd/" target="_blank">vngct.rf.gd</a></li>
-                </ul>
+
+    <div id="background">
+        <div class="container">
+            <div class="row mb">
+                <div class="column">
+                    <a href="/" class="logo">Github</a>
+                    <h1 class="header">Profile Github Creative</h1>
+                    <div id="profile-box" class="transparent-box">
+                        <div id="profile"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="one-half column">
+                    <div class="links-list repos-container transparent-box">
+                        <h1>Github Repositories</h1>
+                        <!-- Repositories will be injected here by index.js -->
+                    </div>
+                </div>
+
+                <div class="one-half column">
+                    <div class="links-list">
+                        <h1>Website Links</h1>
+                        <div class="web-links-container">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://vngct.w3spaces.com/">vngct.w3spaces.com</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://vngct.vercel.app/">vngct.vercel.app</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://shopvngct.000webhostapp.com/">shopvngct.000webhostapp.com</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://vngct.netlify.app/">vngct.netlify.app</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://shopaccvngct.rf.gd/">shopaccvngct.rf.gd</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://vngct.rf.gd/">vngct.rf.gd</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer class="footer">
-            <p>Code by Creative</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/nhd31082003/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://open.spotify.com/user/317htlrmz66bjeqe4cktshzz7u3q?si=7f0624d9511c461c" target="_blank" class="spotify"><i class="fab fa-spotify"></i></a>
-                <a href="https://www.youtube.com/@creative1896" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/creative1896/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://steamcommunity.com/id/creative3108/" target="_blank" class="steam"><i class="fab fa-steam"></i></a>
+
+        <div class="container">
+            <div class="footer">
+                <p>
+                    Developed By
+                    <a href="https://github.com/vngctcreative/">Creative</a>
+                </p>
             </div>
-        </footer>
+        </div>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
