@@ -12,7 +12,7 @@ Dự án này hiển thị hồ sơ GitHub, kho lưu trữ code cùng với các
 
 ## Demo
 
-Bạn có thể xem bản demo trực tuyến của dự án [tại đây](#).
+Bạn có thể xem bản demo trực tuyến của dự án [tại đây](https://vngctcreative.github.io/).
 
 ## Công Nghệ Sử Dụng
 
