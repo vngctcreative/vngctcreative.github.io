@@ -104,7 +104,16 @@ function displayProfile(profile) {
         <h2>${profile.name || profile.login}</h2>
         <p>${profile.bio || 'No bio available.'}</p>
         <p><strong>Followers:</strong> ${profile.followers} | <strong>Following:</strong> ${profile.following}</p>
-        <p><a href="${profile.html_url}" target="_blank"><i class="fab fa-github"></i> View GitHub Profile</a></p>
+        <div class="social-icons">
+            <a href="${profile.html_url}" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com/nhd31082003" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/creative1896" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.gg/4Sbc2hVvNT" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://youtube.com/@creative1896" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://open.spotify.com/user/317htlrmz66bjeqe4cktshzz7u3q?si=7f0624d9511c461c" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://steamcommunity.com/id/creative3108" target="_blank"><i class="fab fa-steam"></i></a>
+            <a href="https://store.epicgames.com/u/59db6de1245e4c3890b5f3458618d6d9" target="_blank"><i class="fab fa-epic-games"></i></a>
+        </div>
     `;
 }
 
