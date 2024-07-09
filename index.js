@@ -96,13 +96,13 @@ async function fetchGitHubRepos(username) {
 function displayProfile(profile) {
     const profileDiv = document.getElementById('profile');
     if (!profile) {
-        profileDiv.innerHTML = '<p>Profile not found.</p>';
+        profileDiv.innerHTML = '<p>Không tìm thấy Profile.</p>';
         return;
     }
     profileDiv.innerHTML = `
         <img src="${profile.avatar_url}" alt="${profile.login}" style="width: 100px; height: 100px; border-radius: 50%;">
         <h2>${profile.name || profile.login}</h2>
-        <p>${profile.bio || 'No bio available.'}</p>
+        <p>${profile.bio || 'Không có mô tả gì trên hồ sơ này.'}</p>
         <p><strong>Followers:</strong> ${profile.followers} | <strong>Following:</strong> ${profile.following}</p>
         <div class="social-icons">
             <a href="${profile.html_url}" target="_blank"><i class="fab fa-github"></i></a>
@@ -119,7 +119,7 @@ function displayProfile(profile) {
 
 function displayRepos(repos) {
     const reposDiv = document.querySelector('.repos-container');
-    reposDiv.innerHTML = '<h1>Github Repositories</h1><input type="text" id="search-bar" placeholder="Tìm kiếm kho lưu trữ..." onkeyup="searchRepos()">';
+    reposDiv.innerHTML = '<h1>Các Repo trên Profile này</h1><input type="text" id="search-bar" placeholder="Tìm kiếm Repo ..." onkeyup="searchRepos()">';
     if (!repos || repos.length === 0) {
         const noReposMessage = document.createElement('p');
         noReposMessage.className = 'no-repos';
@@ -132,7 +132,7 @@ function displayRepos(repos) {
         repoDiv.className = 'repo';
         repoDiv.innerHTML = `
             <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-            <p>${repo.description || 'No description available.'}</p>
+            <p>${repo.description || 'Không có mô tả về Repo này.'}</p>
             <p><strong>Stars:</strong> ${repo.stargazers_count} | <strong>Forks:</strong> ${repo.forks_count}</p>
         `;
         reposDiv.appendChild(repoDiv);
