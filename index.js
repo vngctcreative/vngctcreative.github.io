@@ -119,7 +119,7 @@ function displayProfile(profile) {
 
 function displayRepos(repos) {
     const reposDiv = document.querySelector('.repos-container');
-    reposDiv.innerHTML = '<h1>Các Repo trên Profile này</h1><input type="text" id="search-bar" placeholder="Tìm kiếm Repo ..." onkeyup="searchRepos()">';
+    reposDiv.innerHTML = '<h1>Repo on this profile</h1><input type="text" id="search-bar" placeholder="Search Repo ..." onkeyup="searchRepos()">';
     if (!repos || repos.length === 0) {
         const noReposMessage = document.createElement('p');
         noReposMessage.className = 'no-repos';
