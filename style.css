@@ -10,12 +10,14 @@ body {
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
     background: #2a2b32;
+    color: #fff; /* Updated color for better contrast */
 }
 
 a {
     color: #ccc;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: bold; /* Make links bold */
 }
 
 a:hover {
@@ -30,7 +32,7 @@ h1.header {
 }
 
 h2 {
-    color: #616161;
+    color: #e91e63; /* Updated color for better contrast */
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -50,6 +52,7 @@ canvas {
     font-family: 'Monoton', cursive;
     color: #fff;
     font-size: 3rem;
+    font-weight: bold; /* Make logo bold */
 }
 
 .links-list ul li {
@@ -58,11 +61,13 @@ canvas {
     font-size: 1.4rem;
     margin-bottom: 0;
     color: #ccc;
+    font-weight: bold; /* Make list items bold */
 }
 
 .links-list h1 {
     color: #fff;
     font-size: 2.5rem;
+    font-weight: bold; /* Make headings bold */
 }
 
 .links-list ul li span {
@@ -86,6 +91,7 @@ canvas {
 .footer p {
     color: #fff;
     font-size: 1.3rem;
+    font-weight: bold; /* Make footer text bold */
 }
 
 /* Additional styles for elements created by index.js */
@@ -103,12 +109,13 @@ canvas {
 
 .repo h3 a {
     color: #e91e63;
-    font-size: 1.4rem;
+    font-size: 2rem;
+    font-weight: bold; /* Make repo links bold */
 }
 
 .repo p {
     color: #ccc;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
 }
 
@@ -120,11 +127,13 @@ canvas {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-weight: bold; /* Make list headings bold */
 }
 
 .no-repos {
     color: #ccc;
     font-size: 1.2rem;
+    font-weight: bold; /* Make no repos message bold */
 }
 
 /* Styles for the profile section */
@@ -147,6 +156,7 @@ canvas {
     color: #e91e63;
     font-size: 2rem;
     margin: 1rem 0;
+    font-weight: bold; /* Make profile name bold */
 }
 
 #profile p {
@@ -187,4 +197,28 @@ canvas {
     border: 1px solid #ccc;
     background: rgba(51, 51, 51, 0.5);
     color: #fff;
+}
+
+/* Custom scrollbar styles */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #2a2b32;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2a2b32;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #2a2b32;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
