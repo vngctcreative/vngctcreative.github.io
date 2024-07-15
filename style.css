@@ -52,7 +52,7 @@ canvas {
     font-family: 'Monoton', cursive;
     color: #fff;
     font-size: 3rem;
-    font-weight: bold; /* Make logo bold */
+    font-weight: revert;
 }
 
 .links-list ul li {
