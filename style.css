@@ -101,6 +101,7 @@ canvas {
 
 .repo {
     background: rgba(51, 51, 51, 0.5);
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     margin-bottom: 0.5rem;
     color: #ccc;
@@ -108,13 +109,13 @@ canvas {
 
 .repo h3 a {
     color: #e91e63;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold; /* Make repo links bold */
 }
 
 .repo p {
     color: #ccc;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
 }
 
